@@ -1,0 +1,23 @@
+body{
+	    box-sizing: border-box;
+		margin: 0;
+	    padding: 0 20px;
+	    box-sizing: border-box;
+}
+table
+{
+  background: red;
+}
+tr
+{
+  background: white;  
+}
+th{
+	padding: 15px;
+}
+
+p{
+	text-align: center;
+    background: #d31818;
+    color: white; 
+}

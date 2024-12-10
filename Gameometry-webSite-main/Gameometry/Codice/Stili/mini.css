@@ -1,0 +1,734 @@
+/*
+==============
+SEZIONE HEADER
+==============
+*/
+
+body {
+    background-color: var(--mainColor);
+}
+
+header {
+    padding: 0.5em;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3em 2em 2em;
+    padding-bottom: 1em;
+}
+
+#logoSito {
+    grid-row: 1;
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    height: 4.8em;
+}
+
+#logoSito img {
+    padding-bottom: 1em;
+    width: auto;
+}
+
+#menu {
+    display: list-item;
+    padding: 0.5em;
+    grid-row: 2;
+    grid-column: 1;
+}
+
+#menu ul li {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 1.5em;
+    border-right: 1px solid var(--textColor);
+    grid-row: 2;
+    grid-column: 1;
+}
+
+#menu ul li:last-child {
+    border-right: none;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+}
+
+#navUtente {
+    display: flex;
+    align-items: center;
+
+}
+
+#ricerca {
+    grid-row: 3;
+    grid-column: 1;
+    background-color: #f8f0e3;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#cerca img {
+    padding-left: 0.5em;
+}
+
+#searchBar {
+    all: unset;
+    margin-right: 2em;
+    margin-left: 0.2em;
+    text-align: left center;
+}
+
+#SezRicerca {
+    width: 50%;
+    margin-right: 3em;
+    align-items: center;
+}
+
+#ricerca .autocom-box.active {
+    width: 110%;
+    position: relative;
+}
+
+#areaRiservata {
+    grid-row: 4;
+    grid-column: 1;
+}
+
+#areaRiservata img {
+    width: 80%;
+    height: 3em;
+}
+
+/*
+=================
+SEZIONE CONTENUTO
+=================
+*/
+
+/*
+======
+SLIDER
+======
+*/
+
+.wrapper {
+    margin-top: 1.5em;
+}
+
+.horizontal-wrapper .imgs {
+    width: 4.5em;
+    height: 6em;
+}
+
+/*
+===========
+ULTIME NEWS
+===========
+*/
+
+#news-grid-container {
+    display: grid;
+    grid-template-areas:
+        'news1'
+        'news1'
+        'news2'
+        'news2'
+        'news3'
+        'news3'
+        'news4'
+        'news4'
+        'news5'
+        'news5';
+    grid-template-columns: 105%;
+    grid-gap: 5em;
+    padding-top: 1.7em;
+    padding-right: 2.5em;
+}
+
+#breadcrumb {
+    align-content: center;
+    font-size: 1.0em;
+    padding: 0.3em 0em 0.3em 1em;
+    font-weight: bold;
+}
+
+.news-box,
+.mainnews-box {
+    min-height: 18.0em;
+    max-height: 20.0em;
+}
+
+.sidenews-section>h2,
+.mainnews-section>h2 {
+    font-weight: bolder;
+    line-height: 1.5em;
+    font-size: 2.5em;
+}
+
+.carousel img {
+    height: 25vh;
+}
+
+#btn-left,
+#btn-right {
+    width: 30%;
+}
+
+.mainnews-section>.author {
+    padding-top: 1.0em;
+}
+
+.news-topic,
+.sidenews-topic {
+    font-size: 1.8em;
+    line-height: 1.2em;
+    padding: 0.0em;
+}
+
+.mainnews-box>img,
+.news-box>img {
+    min-height: 35.0em;
+    height: 35.0em;
+}
+
+/*
+=================
+ULTIME RECENSIONI
+=================
+*/
+
+.contenutoRecensione li {
+    font-size: 1em;
+}
+
+.contenutoRecensione li:last-child {
+    padding-top: 0.8em;
+}
+
+.punteggio {
+    max-height: 2em;
+}
+
+.scores {
+    font-size: 1.8em;
+    line-height: 1.5em;
+}
+
+#boxattributi {
+    padding: 0;
+    padding-bottom: 0;
+}
+
+#boxattributi img {
+    margin-top: 3.0em;
+}
+
+#locandinagioco {
+    width: 20%;
+    height: auto;
+}
+
+#desc {
+    font-size: 1.5em;
+    line-height: 2.0em;
+    padding-left: 3.5em;
+}
+
+/*
+=============
+PAGINA EVENTI
+=============
+*/
+
+.evento {
+    line-height: 4.0em;
+}
+
+.evento h2 {
+    text-align: center;
+    line-height: 2.5em;
+    padding-left: 1.0em;
+    padding-right: 1.0em;
+}
+
+.evento p {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+}
+
+.dataNotizia {
+    text-align: center;
+}
+
+.evento h2+p.dataNotizia {
+    padding-bottom: 2.0em;
+}
+
+/*
+==============
+SEZIONE FOOTER
+==============
+*/
+
+footer {
+    text-align: center;
+}
+
+footer ul li {
+    padding-bottom: 0.5em;
+}
+
+#boxFooter img {
+    width: 20%;
+}
+
+#aboutUs,
+#infoAzienda {
+    padding-bottom: 0.5em;
+    font-size: 1.1em;
+    line-height: 2.5em;
+}
+
+#copyrightfooter {
+    font-size: .8em;
+    font-style: italic;
+}
+
+/*
+==================
+PAGINA VIDEOGIOCHI
+==================
+*/
+
+#sezioneVideogiochi {
+    width: 100%;
+    display: grid;
+    object-fit: contain;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-row-gap: 4.0em;
+    grid-column-gap: 2.0em;
+    margin-top: 2.0em;
+    margin-bottom: 5.0em;
+    align-items: center;
+    justify-items: center;
+}
+
+#sezioneVideogiochi img {
+    width: auto;
+    height: 40.0em;
+    margin-bottom: 1.5em;
+}
+
+#toStretch {
+    padding: 2.0em 0em 70.0em 1.0em;
+    margin-bottom: 10em;
+}
+
+/*
+=================
+PAGINA DI ACCESSO
+=================
+*/
+
+#logIn,
+#modificaUtenza,
+#mainRegistrazione {
+    padding-top: 6em;
+    padding-bottom: 45em;
+}
+
+/*
+=================
+PAGINA RECENSIONE
+=================
+*/
+
+#recensioneGioco {
+    padding-top: 12.0em;
+}
+
+#areaCommento {
+    font-size: 1.5em;
+}
+
+#votazione p {
+    margin-top: 1.0em;
+    line-height: 0;
+}
+
+#inviaCommento {
+    font-size: 2.0em;
+    margin-bottom: 1.0em;
+}
+
+#contenuto {
+    line-height: 3.0em;
+}
+
+#errCommento {
+    font-size: 1.8em;
+}
+
+#errVoto {
+    padding-top: 2.0em;
+    font-size: 1.8em;
+}
+
+/*
+=================
+PAGINA RECENSIONE
+=================
+*/
+
+#titoloGioco {
+    font-size: 2.5em;
+}
+
+.descrizioneEvento p {
+    font-size: 1.2em;
+}
+
+.evento h2 {
+    font-size: 1.8em;
+    padding-top: 2.0em;
+    padding-bottom: 1.5em;
+}
+
+.commento,
+.commentoRecensione {
+    line-height: 2.5em;
+}
+
+/*
+=============
+PAGINA UTENTE
+=============
+*/
+
+#user-info dt {
+    margin-left: 1.0em;
+    margin-top: 0.5em;
+}
+
+#user-info dd {
+    font-size: 0.5em;
+}
+
+#logoutB {
+    margin-left: 3.0em;
+}
+
+#recensioni-utenti #messageU {
+    padding-bottom: 20.0em;
+    line-height: 3.0em;
+}
+
+.contenutoRecensioneU1 {
+    line-height: 2.5em;
+}
+
+.userButtons button {
+    height: 5.0em;
+}
+
+@media screen and (max-width: 820px) {
+    #menu ul li {
+        padding-left: 1.2em;
+        padding-right: 1.2em;
+        font-size: 1em;
+    }
+
+    #firstTitle {
+        margin-top: 5em;
+    }
+
+    #ricerca {
+        padding-bottom: 0.5em;
+        height: 0.8em;
+        background-color: white;
+    }
+
+    #cerca img {
+        padding-left: 0.5em;
+
+    }
+
+    #searchBar {
+        width: 100%;
+        font-size: 1em;
+    }
+
+    #areaRiservata img {
+        width: 80%;
+        height: 2em;
+    }
+
+    .scores {
+        font-size: 16px;
+    }
+
+    #boxattributi {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2em;
+    }
+
+    #locandinagioco {
+        width: 35%;
+        height: auto;
+    }
+
+
+    #trama {
+        padding-bottom: 1em;
+    }
+
+    #filtro {
+        padding-top: 1.5em;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    #menu ul li {
+        padding-left: 1.2em;
+        padding-right: 1.2em;
+        font-size: 0.8em;
+    }
+}
+
+
+@media screen and (max-device-width: 800px) {
+
+    main {
+        padding-top: 15em;
+    }
+
+    #mainVideogioco {
+        padding-top: 18em;
+    }
+
+    #mainRecensione {
+        padding-top: 20em;
+    }
+
+    #recensioni-critica>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .r1 {
+        height: 35em;
+        width: auto;
+    }
+
+    .commentoRecensione {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .contenutoRecensione {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titoloCritica {
+        font-size: 2.6em;
+        margin-bottom: 0.8em;
+        line-height: 1.5em;
+        text-align: center;
+    }
+
+    .contenutoRecensione p {
+        font-size: 1.4em;
+        line-height: 3.5em;
+        padding-left: 2.5em;
+        padding-right: 2.5em;
+    }
+
+    #sezioneGioco {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    #boxattributi {
+        margin-top: 3em;
+        font-size: 2em;
+    }
+
+    #lanostrarecensione {
+        font-size: 1.5em;
+    }
+
+    #locandinagioco {
+        width: 40%;
+        height: auto;
+    }
+
+    .punteggio {
+        font-size: 3em;
+        margin-left: 0;
+        width: 1.5em;
+        margin-bottom: 1em;
+    }
+
+    #recensioni-critica>div {
+        border-bottom: 2px solid var(--mainColor);
+    }
+
+
+    #filtro {
+        margin-top: 2em;
+        flex-direction: column;
+        margin-bottom: 3em;
+    }
+
+    #btnImgFiltro {
+        margin-bottom: 3em;
+    }
+
+    #imgFiltro {
+        width: 120%;
+
+    }
+
+    .filtri {
+        margin-bottom: 1em;
+        font-size: 2.3em;
+
+    }
+
+}
+
+@media screen and (max-device-width: 600px) {
+
+    #recensioneGioco {
+        padding-top: 19.0em;
+    }
+
+    #menu {
+        margin-top: 2em;
+    }
+
+    #menu ul li {
+        padding-left: 0.6em;
+        padding-right: 0.6em;
+        font-size: 2em;
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    #ricerca {
+        padding-bottom: 0.8em;
+        height: 1.4em;
+        background-color: white;
+    }
+
+    #cerca img {
+        padding: 0.5em;
+        padding-right: 2em;
+        width: 100%;
+        height: 2.5em;
+    }
+
+    #searchBar {
+        width: 200%;
+        font-size: 1.5em;
+        margin-top: 0.3em;
+    }
+
+    #areaRiservata img {
+        height: 4em;
+        width: 100%;
+    }
+
+    #navUtente {
+        margin-top: 3.5em;
+    }
+
+    #breadcrumb {
+        font-size: 1.8em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        margin-top: 2em;
+    }
+
+    .wrapper {
+        height: 25vh;
+    }
+
+    #titoloRecensione {
+        font-size: 3em;
+    }
+
+    h1 {
+        line-height: 1.5em;
+        margin-top: 3em;
+        padding: 0.4em;
+        border-radius: 7px;
+        text-align: left;
+        background-color: var(--mainColor);
+        border: 0.5px solid var(--mainColor);
+    }
+
+    .autocom-box li {
+        font-size: 2em;
+        line-height: 1.5em;
+    }
+
+    #SezRicerca {
+        width: 50%;
+        padding-bottom: 1.5em;
+        margin-right: 3em;
+    }
+
+    #ricerca .autocom-box.active {
+        margin-top: 1em;
+    }
+
+    #votazione {
+        color: var(--textColor);
+        margin-top: 2.0em;
+    }
+
+    #votazione input {
+        font-size: 2.5em;
+        width: 0.7em;
+        height: 0.7em;
+        float: left;
+    }
+
+    #votazione p {
+        margin-bottom: 1em;
+        float: inherit;
+        font-size: 1.5em;
+    }
+
+    #voto {
+        float: left;
+        font-size: 1.3em;
+        margin-right: 1em;
+        margin-left: 0.2em;
+    }
+
+    #sezioneVideogiochi img {
+        width: 42.0em;
+        height: 60.0em;
+        margin-bottom: 1.5em;
+    }
+
+    .imgSpan {
+        font-size: 3em;
+    }
+
+    #btn-left,
+    #btn-right {
+        display: none;
+    }
+}

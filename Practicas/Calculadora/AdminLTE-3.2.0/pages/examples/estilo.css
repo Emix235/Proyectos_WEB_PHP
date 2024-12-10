@@ -1,0 +1,233 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+    padding: 0;
+    border: 0;
+    background: #ff9100;
+}
+
+div {
+    background: #502508;
+    padding: 30px;
+    margin-top: 35px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 18px;
+    width: 770px;
+}
+form {
+  width: 750px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+}
+
+h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+  color: white;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="datetime-local"],
+select {
+  background: #daff0057;
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 75%;
+  color: #6d2f12;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-right: 25px;
+  text-align: center;
+}
+textarea{
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #6d2f12;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-right: 25px; 
+}
+#F1{
+    margin-right: 0px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+#F2{
+    background: transparent;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    justify-content: center;
+}
+#BTN{
+  background: rgba(255,255,255,0.1);
+    padding: 15px;
+    background-color: #8b3800;
+    color: #e8eeef;
+    box-shadow: 0 1px 0 rgb(0 0 0 / 3%) inset;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+#browser{
+   background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 45%;
+  background-color: #e8eeef;
+  color: #6d2f12;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-right: 25px;
+}
+#SF{
+      margin-bottom: 30px;
+    border: none;
+    background: #eba726;
+    border-radius: 20px;
+    padding: 20px;
+    color: #502508;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+input[type="submit"]{
+    background: #8b3800;
+    padding: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 10px;
+    border: 2px #1b0601 solid;
+}
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #4bc970;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+
+fieldset{
+    margin-bottom: 30px;
+    border: none;
+    background: #eba726;
+    padding: 20px;
+    color: #502508;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
+    justify-content: space-around;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  font-size: 2.4em;
+  background: #eba726;
+  border-radius: 14px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+.number {
+  background-color: #5fcf80;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 100%;
+}
+
+@media screen and (min-width: 480px) {
+
+  form {
+    max-width: 480px;
+  }
+
+}
